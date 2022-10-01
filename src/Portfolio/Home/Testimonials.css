@@ -1,0 +1,11 @@
+.slidebar {
+  -webkit-box-shadow: 5px 21px 39px 10px rgba(0,0,0,0.98); 
+  box-shadow: 5px 21px 39px 10px rgba(0,0,0,0.98);
+}
+.about{
+  text-decoration: overline solid rgb(68, 68, 68);
+
+}
+.slidebar:hover{
+  cursor: pointer;
+}
