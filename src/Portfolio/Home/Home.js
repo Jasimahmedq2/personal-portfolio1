@@ -6,9 +6,13 @@ import Contact from './Contact';
 import Project from './Project';
 import Testimonials from './Testimonials';
 
+
 const Home = () => {
+
   return (
-   <>
+    <>
+
+   
    <Navber />
    <Banner />
    <About />
@@ -16,6 +20,7 @@ const Home = () => {
    <Testimonials />
    <Contact />
    </>
+
   );
 };
 

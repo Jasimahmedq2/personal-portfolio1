@@ -27,19 +27,19 @@ const Contact = () => {
   };
 
   return (
-    <div className='bg-base-300 flex px-6'>
-      <div className='w-3/5 py-2 rounded-xl'>
+    <div className='bg-base-300 sm:flex px-6'>
+      <div className='sm:w-3/5 py-2 rounded-xl'>
   
      <iframe className='w-full h-full'  id="gmap_canvas" src="https://maps.google.com/maps?q=bhairab%20dhaka,%20bangladesh%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
       </div>
 
-      <form className='text-end py-6 w-2/5 ' ref={form} onSubmit={sendEmail}>
-        <input name='user_name' type="text" placeholder="Name" className="input w-full max-w-xs" />
+      <form className='text-center md:text-end py-6 ml-2 sm:w-2/5  ' ref={form} onSubmit={sendEmail}>
+        <input name='user_name' type="text" placeholder="Name" className="input w-full max-w-xs" required/>
         <br />
-        <input name='user_email' type="text" placeholder="Email" className="input w-full max-w-xs mt-2" />
+        <input name='user_email' type="text" placeholder="Email" className="input w-full max-w-xs mt-2" required/>
         <br />
-        <textarea name='message' style={{resize: 'none'}} className="textarea w-full max-w-xs mt-2" placeholder="message"></textarea>
+        <textarea name='message' style={{resize: 'none'}} className="textarea w-full max-w-xs mt-2" placeholder="message" required></textarea>
         <br />
         <input className='btn btn-outline w-full max-w-xs mt-2' type="submit" value="Send" />
 

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navber = () => {
 
   const NavbarTools = <>
-    <li><Link to='/'>home</Link></li>
-    <li><Link to='/about'>about</Link></li>
-    <li><Link to='/service'>service</Link></li>
-    <li><Link to='/contact'>contact</Link></li>
+    <li><NavLink to='/'>home</NavLink></li>
+    <li><NavLink to='/about'>about</NavLink></li>
+    <li><NavLink to='/service'>service</NavLink></li>
+    <li><NavLink to='/contact'>contact</NavLink></li>
   </>
   return (
     <div className="navbar ">

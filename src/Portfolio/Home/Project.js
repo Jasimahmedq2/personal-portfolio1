@@ -6,10 +6,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar'
 
+
 import 'swiper/css';
 
 
 const Project = () => {
+
+
+
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
@@ -19,9 +23,11 @@ const Project = () => {
   }, [])
   return (
     <div>
-      <h2 className='text-center text-xl font-bold text-primary'>
-        <AiOutlineFundProjectionScreen className='text-8xl w-50 mx-auto' />
-        Recent I've build {projects.length} projects</h2>
+      <div className='text-center text-xl font-bold text-primary about'>
+        <h2
+        
+        ><AiOutlineFundProjectionScreen className='text-8xl w-50 mx-auto mb-5' /></h2>
+        Recent I've build {projects.length}  projects</div>
 
 
       <div className='px-12 py-12 sm:grid-cols-1'>

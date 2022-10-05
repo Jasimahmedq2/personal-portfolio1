@@ -1,11 +1,18 @@
-import React from 'react';
-import { MdOutlineRateReview } from 'react-icons/md'
+import React, { useEffect, useState } from 'react';
+import { MdOutlineRateReview, MdReviews } from 'react-icons/md'
 import { AiFillQuestionCircle } from 'react-icons/ai'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 import './Testimonials.css'
 const Testimonials = () => {
+  const [reviews, setReviews] = useState([])
+
+  useEffect(() => {
+    fetch('message.json')
+      .then(res => res.json())
+      .then(data => setReviews(data))
+  }, [])
   return (
     <div className='py-8 px-12'>
 
@@ -13,27 +20,33 @@ const Testimonials = () => {
         <h2 className='text-natural font-bold text-xl mt-2'>
           <MdOutlineRateReview className='text-6xl text-primary w-50 mx-auto' />
           <span className='shadow-xl rounded-lg about'>testimonials</span> </h2>
-        <h2 className='text-2xl text-primary font-bold mt-10 flex items-center'>what say our client <AiFillQuestionCircle /></h2>
+        <h2 className='text-2xl text-primary font-bold mt-10 flex items-center'>what say our client {reviews.length}<AiFillQuestionCircle /></h2>
       </div>
 
-          <div className='text-center slidebar'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5'>
+        {
+          reviews.map((review, index) => (
+            <div className='text-center slidebar'>
 
-            <div className="w-8/5" style={{
+            <div className="lg:max-w-lg" style={{
               borderLeft: '5px solid #1C6EA4'
             }}>
-              <div className="avatar" style={{ marginTop: '-3rem' }}>
-                <div className="w-24 rounded-full ring ring-primary ring-offset-base-300 ring-offset-2">
+              <div className="avatar" style={{ marginTop: '-1rem' }}>
+                <div className="w-16 rounded-full ring ring-primary ring-offset-base-300 ring-offset-2">
                   <img src="https://placeimg.com/192/192/people" />
                 </div>
               </div>
               <div className=" ">
-                <h2 className="text-3xl text-natural font-bold">jasim ahmed</h2>
-                <i className='text-xl text-natural font-bold'>If a dog chews shoes whose shoes does he choose Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, aliquid. </i>
+                <h2 className="text-3xl text-natural font-bold">{review.title}</h2>
+                <i className='text-xl text-natural font-bold'>{review.description}</i>
               </div>
-          </div>
-          </div>
+            </div>
+            </div>
+          ))
+        }
+      </div>
+      </div>
 
-    </div>
   );
 };
 
