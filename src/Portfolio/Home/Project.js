@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
-import {Navigation, Pagination} from 'swiper'
+import { Navigation, Pagination } from 'swiper'
+import { motion } from 'framer-motion'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar'
@@ -24,18 +25,28 @@ const Project = () => {
   return (
     <div>
       <div className='text-center text-xl font-bold text-primary about'>
-        <h2
-        
-        ><AiOutlineFundProjectionScreen className='text-8xl w-50 mx-auto mb-5' /></h2>
+        <motion.h2
+          whileHover={{ scale: 1.2 }}
+         
+
+        ><AiOutlineFundProjectionScreen className='text-8xl w-50 mx-auto mb-5' /></motion.h2>
         Recent I've build {projects.length}  projects</div>
 
 
       <div className='px-12 py-12 sm:grid-cols-1'>
         <Swiper
+          breakpoints={{
+            576: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+          }}
 
           slidesPerView={2}
           spaceBetween={30}
-          navigation={{clickable: true}}
+          navigation={{ clickable: true }}
           pagination={{
             clickable: true,
           }}

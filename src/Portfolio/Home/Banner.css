@@ -20,6 +20,12 @@
   -webkit-filter: brightness(112%) saturate(101%);
   filter: brightness(112%) saturate(101%);
 }
+.banner-container{
+  font-weight: 900;
+  font-family: sans-serif;
+  min-height: 25rem;
+}
+
 .ancor-tag h2{
 cursor: pointer;
 color: rgba(79, 79, 159, 0.904);

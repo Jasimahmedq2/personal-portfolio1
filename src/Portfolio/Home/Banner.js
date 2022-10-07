@@ -22,13 +22,17 @@ const Banner = () => {
   }
 
   return (
-    <div className="  px-12 bg-black">
+    <div className="banner-container  px-12 bg-black">
 
 
-      <div className=' sm:flex justify-center items-center'>
+      <div className=' sm:flex justify-center items-center sm:relative'>
 
         <div className='sm:w-1/2'>
-          <h2 className="text-2xl font-bold text-white"><span className='after-effect'>I'M Jasim</span>
+          <h2
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="text-2xl font-bold text-white"><span className='after-effect'>I'M Jasim</span>
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.typeString('web developer').pauseFor(2000).deleteAll().typeString('React developer').pauseFor(2000).deleteAll().typeString('Mern Stack developer')
@@ -38,15 +42,21 @@ const Banner = () => {
 
           </h2>
           <p className='mt-5 text-xl text-white'>
-          <Typewriter
+            <Typewriter
               onInit={(typewriter) => {
                 typewriter.typeString('<strong>  Lorem ipsum dolor sit amet <span style="color: #27ae60;">  adipisicing elit. Aspernatur, exercitationem!</span>  Lorem ipsum dolor s!</strong>').start()
               }}
-            /> 
-            </p>
-          
-             
-          <button className="btn btn-primary">See More</button>
+            />
+          </p>
+
+
+          <button
+          data-aos="zoom-in-up"
+          data-aos-delay="500"
+          data-aos-duration="3000"
+
+
+          className="btn btn-primary  absolute bottom-0">See More</button>
         </div>
         <div className='sm:w-1/2 sm:flex'>
 
@@ -73,7 +83,11 @@ const Banner = () => {
           </div>
 
 
-          <div className='mt-4 ancor-tag grid sm:grid-cols-1 grid-cols-3'>
+          <div
+          data-aos="fade-down"
+          data-aos-delay="500"
+          data-aos-duration="3000"
+          className='mt-4 ancor-tag grid sm:grid-cols-1 grid-cols-3'>
             <h2 className='w-50 mx-auto'><a href="https://www.facebook.com/" target="_blank"><BsFacebook className='text-5xl ' /></a></h2>
             <h2 className='w-50 mx-auto'><a href="https://bd.linkedin.com/" target="_blank"><AiFillLinkedin className='text-5xl ' /></a></h2>
             <h2 className='w-50 mx-auto'><a href="https://github.com/" target="_blank"><AiFillGithub className='text-5xl ' /></a></h2>

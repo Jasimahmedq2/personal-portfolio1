@@ -1,4 +1,5 @@
 import React from 'react';
+import { Example } from '../axample/Example';
 import Navber from '../Navbar/Navber';
 import About from './About';
 import Banner from './Banner';
@@ -12,13 +13,14 @@ const Home = () => {
   return (
     <>
 
+   <Example />
+    <Banner />
+    <About />
+    <Project />
+    <Testimonials />
+
+    <Contact />
    
-   <Navber />
-   <Banner />
-   <About />
-   <Project />
-   <Testimonials />
-   <Contact />
    </>
 
   );
