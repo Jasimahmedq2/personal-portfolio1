@@ -13,6 +13,7 @@
     "aos": "^3.0.0-beta.6",
     "daisyui": "^2.31.0",
     "emailjs": "^4.0.1",
+    "firebase": "^9.11.0",
     "framer-motion": "^7.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
