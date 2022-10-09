@@ -23,7 +23,9 @@
 .banner-container{
   font-weight: 900;
   font-family: sans-serif;
-  min-height: 25rem;
+  background: #2a2d3a;
+  min-height: 20rem;
+
 }
 
 .ancor-tag h2{

@@ -24,7 +24,7 @@ const Project = () => {
   }, [])
   return (
     <div>
-      <div className='text-center text-xl font-bold text-primary about'>
+      <div className='text-center text-xl font-bold text-primary about my-12'>
         <motion.h2
           whileHover={{ scale: 1.2 }}
          

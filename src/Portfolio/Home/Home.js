@@ -21,7 +21,6 @@ const Home = () => {
         
         href=" https://wa.me/01794274148" target="_blank"><BsWhatsapp className='text-6xl' style={{color: '#075E54'}}/></a>
       </motion.div>
-   <Example />
     <Banner />
     <About />
     <Project />

@@ -12,15 +12,18 @@ import Contact from './Portfolio/Home/Contact';
 
 import { useEffect } from 'react';
 import './App.css'
+import { Example } from './Portfolio/axample/Example';
 
 function App() {
-  
+
   useEffect(() => {
     AOS.init();
-  },[])
+  }, [])
 
   return (
     <div>
+      <Example />
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

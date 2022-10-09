@@ -25,13 +25,13 @@ const Testimonials = () => {
       .then(data => setReviews(data))
   }, [])
   return (
-    <div className='py-8 px-12'>
+    <div className='py-8 px-12 main-container'>
 
     <div className='text-center '>
       <h2 className='text-natural font-bold text-xl mt-2'>
-        <MdOutlineRateReview className='text-6xl text-primary w-50 mx-auto mb-5' />
-        <span className='shadow-xl rounded-lg about text-white'>testimonials</span> </h2>
-      <h2 className='text-2xl text-primary font-bold mt-10 flex items-center'>what say our client {reviews.length}<AiFillQuestionCircle /></h2>
+        <MdOutlineRateReview className='text-8xl text-secondary w-50 mx-auto mb-5' />
+        <span className='shadow-xl rounded-lg about text-black'>testimonials</span> </h2>
+      <h2 className='text-2xl text-accent font-bold mt-10 flex items-center'>what say our client <AiFillQuestionCircle /></h2>
     </div>
 
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5'>
@@ -48,8 +48,8 @@ const Testimonials = () => {
               </div>
             </div>
             <div className=" ">
-              <h2 className="text-3xl text-natural font-bold text-white">{review.title}</h2>
-              <i className='text-xl text-natural font-bold text-white'>{review.description}</i>
+              <h2 className="text-3xl text-natural font-bold text-accent">{review.title}</h2>
+              <i className='text-xl text-natural font-bold text-black'>{review.description}</i>
             </div>
           </div>
           </div>

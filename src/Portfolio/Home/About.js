@@ -11,9 +11,9 @@ import { motion } from "framer-motion";
 import './About.css'
 const About = () => {
   return (
-    <div className='my-28 '>
+    <div className=''>
    
-      <div className='px-12 py-12 bg-base-300'>
+      <div className='px-12 py-16 bg-base-300'>
         <h2 className='text-2xl font-bold after-effect'>About me</h2>
         <h3 className='text-xl font-bold '>I'm Jasim Web developer</h3>
         <h3 className='text-xl mt-8 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur, iusto rerum, pariatur deleniti nostrum error nam in animi ipsa cupiditate numquam eligendi, expedita quo aliquid earum placeat similique laudantium!</h3>

@@ -22,7 +22,7 @@ const Banner = () => {
   }
 
   return (
-    <div className="banner-container  px-12 bg-black">
+    <div className="banner-container  px-12">
 
 
       <div className=' sm:flex justify-center items-center sm:relative'>
