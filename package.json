@@ -23,6 +23,7 @@
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
     "react-spring": "^9.5.5",
+    "react-tabs": "^5.1.0",
     "react-toastify": "^9.0.8",
     "react-tsparticles": "^2.3.3",
     "react-typical": "^0.1.3",

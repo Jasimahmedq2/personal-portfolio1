@@ -3,7 +3,6 @@ import { BsFacebook } from 'react-icons/bs'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
 import Typewriter from 'typewriter-effect';
-import mern from '../../image/mern.jpg'
 import { motion } from "framer-motion";
 
 
@@ -22,10 +21,10 @@ const Banner = () => {
   }
 
   return (
-    <div className="banner-container  px-12">
+    <div className="banner-container  px-12 mt-24 py-10">
 
 
-      <div className=' sm:flex justify-center items-center sm:relative'>
+      <div className=' sm:flex justify-center items-center'>
 
         <div className='sm:w-1/2'>
           <h2
@@ -42,11 +41,7 @@ const Banner = () => {
 
           </h2>
           <p className='mt-5 text-xl text-white'>
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter.typeString('<strong>  Lorem ipsum dolor sit amet <span style="color: #27ae60;">  adipisicing elit. Aspernatur, exercitationem!</span>  Lorem ipsum dolor s!</strong>').start()
-              }}
-            />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ullam. Consectetur adipisci facere consequatur iste nostrum maxime quisquam fugit libero!
           </p>
 
 
@@ -56,7 +51,7 @@ const Banner = () => {
           data-aos-duration="3000"
 
 
-          className="btn btn-primary  absolute bottom-0">See More</button>
+          className="btn btn-primary">See More</button>
         </div>
         <div className='sm:w-1/2 sm:flex'>
 
@@ -88,8 +83,11 @@ const Banner = () => {
           data-aos-delay="500"
           data-aos-duration="3000"
           className='mt-4 ancor-tag grid sm:grid-cols-1 grid-cols-3'>
+  
             <h2 className='w-50 mx-auto'><a href="https://www.facebook.com/" target="_blank"><BsFacebook className='text-5xl ' /></a></h2>
+       
             <h2 className='w-50 mx-auto'><a href="https://bd.linkedin.com/" target="_blank"><AiFillLinkedin className='text-5xl ' /></a></h2>
+         
             <h2 className='w-50 mx-auto'><a href="https://github.com/" target="_blank"><AiFillGithub className='text-5xl ' /></a></h2>
           </div>
         </div>

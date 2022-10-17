@@ -31,7 +31,7 @@ export const MenuItem = ({ link }) => {
     >
 
       <div className="text-placeholder" style={style}>
-        <button className="btn btn-primary">    
+        <button className="btn-sm btn-outline px-8 w-50 mx-auto text-xl uppercase">    
           <NavLink to={link.to}>{link.name}</NavLink>
         </button>
       </div>

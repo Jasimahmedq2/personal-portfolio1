@@ -2,3 +2,18 @@
   -webkit-box-shadow: 5px 11px 28px 9px rgba(0, 0, 0, 0.64);
   box-shadow: 5px 11px 28px 9px rgba(0, 0, 0, 0.64);
 }
+.effect-container{
+  position: relative;
+}
+.effect-container img{
+display: none;
+width: 150px;
+height: 150px;
+position: absolute;
+top: 50;
+border-radius: 50%;
+}
+.effect-container:hover img{
+display: block;
+z-index: 1;
+}

@@ -36,6 +36,9 @@ const Project = () => {
       <div className='px-12 py-12 sm:grid-cols-1'>
         <Swiper
           breakpoints={{
+            376: {
+              slidesPerView: 1,
+            },
             576: {
               slidesPerView: 1,
             },

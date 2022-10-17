@@ -15,24 +15,24 @@
   top: 50%;
   margin-left: 4px;
 }
-.image-style{
-  background-color: rgba(250, 235, 215, 0.942);
-  -webkit-filter: brightness(112%) saturate(101%);
-  filter: brightness(112%) saturate(101%);
-}
+
 .banner-container{
   font-weight: 900;
   font-family: sans-serif;
   background: #2a2d3a;
-  min-height: 20rem;
+  
 
 }
 
 .ancor-tag h2{
 cursor: pointer;
 color: rgba(79, 79, 159, 0.904);
+position: relative;
 }
 
 .ancor-tag h2:hover{
-  color: rgba(218, 165, 32, 0.648);
+
+  color: white;
+
 }
+
