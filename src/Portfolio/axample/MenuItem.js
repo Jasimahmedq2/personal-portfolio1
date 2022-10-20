@@ -1,6 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller  } from "react-scroll";
+import  Scroll from 'react-scroll';
+
 
 const variants = {
   open: {
@@ -32,7 +34,8 @@ export const MenuItem = ({ link }) => {
 
       <div className="text-placeholder" style={style}>
         <button className="btn-sm btn-outline px-8 w-50 mx-auto text-xl uppercase">    
-          <NavLink to={link.to}>{link.name}</NavLink>
+          <Link 
+          to={link.to}>{link.name}</Link>
         </button>
       </div>
 

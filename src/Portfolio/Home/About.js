@@ -55,7 +55,20 @@ const About = () => {
                     className='flex lg:max-w-lg items-center justify-around font-bold text-4xl bg-base-300 shadow-xl rounded-lg'>
                     <IoMdCheckmarkCircleOutline className='text-primary' />
                     <span className=''>React</span> </h2>
-                    <img src={react} alt="img" />
+                    <motion.img
+                      animate={{
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 180, 180, 0],
+                        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                      }}
+                      transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                        times: [0, 0.2, 0.5, 0.8, 1],
+                        repeat: Infinity,
+                        repeatDelay: 1
+                      }}
+                    src={react} alt="img" />
                 </div>
                 <div className='effect-container'>
                   <h2
@@ -67,7 +80,20 @@ const About = () => {
                     className='flex lg:max-w-lg items-center justify-around font-bold text-4xl bg-base-300 shadow-xl rounded-lg'>
                     <IoMdCheckmarkCircleOutline className='text-primary' />
                     <span className=''>Javascript</span> </h2>
-                    <img src={js} alt="img" />
+                    <motion.img
+                       animate={{
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 180, 180, 0],
+                        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                      }}
+                      transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                        times: [0, 0.2, 0.5, 0.8, 1],
+                        repeat: Infinity,
+                        repeatDelay: 1
+                      }}
+                    src={js} alt="img" />
                 </div>
                 <div className='effect-container'>
                   <h2
@@ -79,7 +105,20 @@ const About = () => {
                     className='flex lg:max-w-lg items-center justify-around font-bold text-4xl bg-base-300 shadow-xl rounded-lg'>
                     <IoMdCheckmarkCircleOutline className='text-primary' />
                     <span className=''>Node js</span> </h2>
-                    <img src={node} alt="img" />
+                    <motion.img
+                       animate={{
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 180, 180, 0],
+                        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                      }}
+                      transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                        times: [0, 0.2, 0.5, 0.8, 1],
+                        repeat: Infinity,
+                        repeatDelay: 1
+                      }}
+                    src={node} alt="img" />
                 </div>
                 <div className='effect-container'>
                   <h2
@@ -91,7 +130,20 @@ const About = () => {
                     className='flex lg:max-w-lg items-center justify-around font-bold text-4xl bg-base-300 shadow-xl rounded-lg'>
                     <IoMdCheckmarkCircleOutline className='text-primary' />
                     <span className=''>Mongodb</span> </h2>
-                    <img src={mongodb} alt="img" />
+                    <motion.img 
+                    animate={{
+                      scale: [1, 2, 2, 1, 1],
+                      rotate: [0, 0, 180, 180, 0],
+                      borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                    }}
+                    transition={{
+                      duration: 2,
+                      ease: "easeInOut",
+                      times: [0, 0.2, 0.5, 0.8, 1],
+                      repeat: Infinity,
+                      repeatDelay: 1
+                    }}
+                    src={mongodb} alt="img" />
                 </div>
                 <div className='effect-container'>
                   <h2
@@ -103,7 +155,20 @@ const About = () => {
                     className='flex lg:max-w-lg items-center justify-around font-bold text-4xl bg-base-300 shadow-xl rounded-lg'>
                     <IoMdCheckmarkCircleOutline className='text-primary' />
                     <span className=''>Express js</span> </h2>
-                    <img src={express} alt="img" />
+                    <motion.img
+                       animate={{
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 180, 180, 0],
+                        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                      }}
+                      transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                        times: [0, 0.2, 0.5, 0.8, 1],
+                        repeat: Infinity,
+                        repeatDelay: 1
+                      }}
+                    src={express} alt="img" />
                 </div>
                 <div className='effect-container'>
                   <h2
@@ -115,7 +180,20 @@ const About = () => {
                     className='flex lg:max-w-lg items-center justify-around font-bold text-4xl bg-base-300 shadow-xl rounded-lg'>
                     <IoMdCheckmarkCircleOutline className='text-primary' />
                     <span className=''>html & css</span> </h2>
-                    <img src={htmlCss} alt="img" />
+                    <motion.img
+                       animate={{
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 180, 180, 0],
+                        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                      }}
+                      transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                        times: [0, 0.2, 0.5, 0.8, 1],
+                        repeat: Infinity,
+                        repeatDelay: 1
+                      }}
+                    src={htmlCss} alt="img" />
                 </div>
 
 

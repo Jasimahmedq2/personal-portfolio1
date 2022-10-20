@@ -19,7 +19,7 @@ const Home = () => {
       className='fixed bottom-12 right-12 z-40'>
         <a
         
-        href=" https://wa.me/01794274148" target="_blank"><BsWhatsapp className='text-6xl' style={{color: '#075E54'}}/></a>
+        href=" https://wa.me/+8801794274148" target="_blank"><BsWhatsapp className='text-6xl' style={{color: '#075E54'}}/></a>
       </motion.div>
     <Banner />
     <About />
