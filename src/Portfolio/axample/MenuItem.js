@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller  } from "react-scroll";
-import  Scroll from 'react-scroll';
+import { Link } from "react-scroll";
+import Scroll from 'react-scroll';
 
 
 const variants = {
@@ -21,10 +21,10 @@ const variants = {
   }
 };
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+
 
 export const MenuItem = ({ link }) => {
-  const style = { border: `2px solid ${colors[link]}` };
+  const style = { border: `2px solid ${[link]}` };
   return (
     <motion.li
       variants={variants}
@@ -33,12 +33,15 @@ export const MenuItem = ({ link }) => {
     >
 
       <div className="text-placeholder" style={style}>
-        <button className="btn-sm btn-outline px-8 w-50 mx-auto text-xl uppercase">    
-          <Link 
-          to={link.to}>{link.name}</Link>
+        <button className="btn-sm btn-outline px-8 w-50 mx-auto text-xl uppercase">
+          <Link
+            to={link.to}
+            spy={true}
+            smooth={true}
+            duration={500}
+          >{link.name}</Link>
         </button>
       </div>
-
 
     </motion.li>
   );

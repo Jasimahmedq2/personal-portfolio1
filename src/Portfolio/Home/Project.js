@@ -64,7 +64,7 @@ const Project = () => {
 
 
               <SwiperSlide>
-                <div className="card lg:max-w-lg bg-base-100 shadow-xl">
+                <div className="card lg:max-w-lg bg-base-200 hover:shadow-lg">
                   <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                   <div className="card-body">
                     <h2 className="card-title">
