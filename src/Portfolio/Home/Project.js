@@ -23,7 +23,7 @@ const Project = () => {
       .then(data => setProjects(data))
   }, [])
   return (
-    <div>
+    <div id='service'>
       <div className='text-center text-xl font-bold text-primary about my-12'>
         <motion.h2
           whileHover={{ scale: 1.2 }}
@@ -49,11 +49,11 @@ const Project = () => {
 
           slidesPerView={2}
           spaceBetween={30}
-          navigation={{ clickable: true }}
+        
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination]}
 
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}

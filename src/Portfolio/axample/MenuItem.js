@@ -1,7 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import Scroll from 'react-scroll';
 
 
 const variants = {
@@ -23,7 +22,7 @@ const variants = {
 
 
 
-export const MenuItem = ({ link }) => {
+export const MenuItem = ({ link, toggle }) => {
   const style = { border: `2px solid ${[link]}` };
   return (
     <motion.li
@@ -35,6 +34,7 @@ export const MenuItem = ({ link }) => {
       <div className="text-placeholder" style={style}>
         <button className="btn-sm btn-outline px-8 w-50 mx-auto text-xl uppercase">
           <Link
+            onClick={toggle}
             to={link.to}
             spy={true}
             smooth={true}

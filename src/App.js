@@ -51,14 +51,14 @@ function App() {
           </div>
         )
       }
-
-      <Routes>
+      <Home />
+      {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/service' element={<Project />} />
         <Route path='/contact' element={<Contact />} />
 
-      </Routes>
+      </Routes> */}
       <ToastContainer />
     </div>
   );

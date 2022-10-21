@@ -25,37 +25,40 @@ const Testimonials = () => {
       .then(data => setReviews(data))
   }, [])
   return (
-    <div className='py-8 px-12 main-container'>
+    <div className='py-8 px-12 main-container' id='testimonials'>
 
     <div className='text-center '>
       <h2 className='text-natural font-bold text-xl mt-2'>
         <MdOutlineRateReview className='text-8xl text-secondary w-50 mx-auto mb-5' />
-        <span className='shadow-xl rounded-lg about text-black'>testimonials</span> </h2>
+        <span className='shadow-xl rounded-lg about text-white'>testimonials</span> </h2>
       <h2 className='text-2xl text-accent font-bold mt-10 flex items-center'>what say our client <AiFillQuestionCircle /></h2>
     </div>
 
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5'>
+    <Swiper
+    
+     >
       {
         reviews.map((review, index) => (
-          <div className='text-center slidebar'>
+          <SwiperSlide className='text-center slidebar '>
 
-          <div className="lg:max-w-lg" style={{
-            borderLeft: '5px solid #1C6EA4'
+          <div className="" style={{
+            borderLeft: '5px solid #1C6EA4',
+            background: '#191d2b'
           }}>
-            <div className="avatar" style={{ marginTop: '-1rem' }}>
-              <div className="w-16 rounded-full ring ring-primary ring-offset-base-300 ring-offset-2">
+            <div className="avatar">
+              <div className="w-16 rounded-full ring ring-primary ring-offset-base-300 ring-offset-2 relative z-40">
                 <img src="https://placeimg.com/192/192/people" />
               </div>
             </div>
-            <div className=" ">
+            <div className="">
               <h2 className="text-3xl text-natural font-bold text-accent">{review.title}</h2>
               <i className='text-xl text-natural font-bold text-black'>{review.description}</i>
             </div>
           </div>
-          </div>
+          </SwiperSlide>
         ))
       }
-    </div>
+    </Swiper>
     </div> 
 
   );

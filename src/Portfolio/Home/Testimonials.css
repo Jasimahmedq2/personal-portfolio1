@@ -1,15 +1,15 @@
-.slidebar {
-  -webkit-box-shadow: 5px 21px 39px 10px rgba(0,0,0,0.98); 
-  box-shadow: 5px 21px 39px 10px rgba(0,0,0,0.98);
-}
-
-.about{
+.about {
   text-decoration: overline solid rgb(90, 90, 216) 4px;
 
 }
-.slidebar:hover{
+
+.slidebar:hover {
   cursor: pointer;
 }
-.main-container{
-  background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95))
+
+.main-container {
+  background: #10121b;
+  opacity: 0.8;
+  background-size: 200px 200px;
+  background-image: repeating-linear-gradient(to right, #ebecf7, #e0e1f3 1px, #01010a 1px, #01010a);
 }

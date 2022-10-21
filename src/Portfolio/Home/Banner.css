@@ -20,6 +20,7 @@
   font-weight: 900;
   font-family: sans-serif;
   background: #2a2d3a;
+  clip-path: polygon(0 100%, 35% 89%, 74% 100%, 100% 85%, 100% 0%, 0 0);
 
 
 }
@@ -39,6 +40,15 @@
 .text-animation {
 	-webkit-animation: text-shadow-pop-top 0.6s both;
 	        animation: text-shadow-pop-top 0.6s both;
+}
+
+@media screen and (max-width: 550px) {
+  .banner-container{
+    clip-path: polygon(0 100%, 38% 98%, 71% 100%, 100% 96%, 100% 0%, 0 0);
+
+
+  }
+  
 }
 
 

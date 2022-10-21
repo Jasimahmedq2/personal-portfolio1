@@ -1,22 +1,25 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
-import { Link } from "react-router-dom";
 
 const links = [
   {
-    name: 'home', to: "/", id: 1
+    name: 'home', to: "home", id: 1
 
   },
   {
-    name: 'about', to: "/about", id: 2
+    name: 'about', to: "about", id: 2
   },
   {
-    name: 'contact', to: "/contact", id: 3
+    name: 'project', to: "service", id: 4
   },
   {
-    name: 'project', to: "/service", id: 4
-  }
+    name: 'review', to: "testimonials", id: 4
+  },
+  {
+    name: 'contact', to: "contact", id: 3
+  },
+
 ]
 
 
@@ -29,12 +32,14 @@ const variants = {
   }
 };
 
-export const Navigation = () => (
+export const Navigation = ({ toggle }) => (
   <motion.ul variants={variants}>
     {
       links.map(link => <MenuItem
+        toggle={toggle}
         key={link.id}
         link={link}
+
       />)
     }
   </motion.ul>

@@ -18,10 +18,10 @@ import htmlCss from '../../image/html-css.jfif'
 import './About.css'
 const About = () => {
   return (
-    <div className=''>
+    <div className='' id='about'>
 
-      <div className='px-12 py-16 bg-base-300'>
-        <h2 className='text-4xl text-white font-bold mb-3 text-animation'>About me</h2>
+      <div className='px-12 py-16 bg-base-300 mt-20 '>
+        <h2 className='text-4xl text-white font-bold mb-3 text-animation text-primary'>About me</h2>
         <h3 className='text-xl font-bold '>I'm Jasim Web developer</h3>
         <h3 className='text-xl mt-8 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur, iusto rerum, pariatur deleniti nostrum error nam in animi ipsa cupiditate numquam eligendi, expedita quo aliquid earum placeat similique laudantium!</h3>
       </div>
