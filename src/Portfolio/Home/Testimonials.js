@@ -25,7 +25,7 @@ const Testimonials = () => {
       .then(data => setReviews(data))
   }, [])
   return (
-    <div className='py-8 px-12 main-container' id='testimonials'>
+    <div className='py-8 px-12 main-container' Id='testimonials'>
 
     <div className='text-center '>
       <h2 className='text-natural font-bold text-xl mt-2'>

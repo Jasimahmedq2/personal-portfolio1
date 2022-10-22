@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='sm:flex px-6 contact-background' id='contact'>
+    <div className='sm:flex px-6 contact-background' Id='contact'>
       <div className='sm:w-3/5  rounded-xl'>
   
      <iframe className='w-full h-full'  id="gmap_canvas" src="https://maps.google.com/maps?q=bhairab%20dhaka,%20bangladesh%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

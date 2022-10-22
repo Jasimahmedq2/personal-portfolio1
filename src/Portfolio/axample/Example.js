@@ -5,7 +5,6 @@ import { useDimensions } from "./use-dimonsions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
 import './styles.css'
-import { MenuItem } from "./MenuItem";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -33,16 +32,16 @@ export const Example = () => {
   const { height } = useDimensions(containerRef);
 
   return (
-  
+
     <motion.nav
-   className="fixed top-0 left-0"
+      className="fixed top-0 "
       initial={false}
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
     >
       <motion.div className="background" variants={sidebar} />
-      <Navigation  toggle={() => toggleOpen()}/>
+      <Navigation toggle={() => toggleOpen()} />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

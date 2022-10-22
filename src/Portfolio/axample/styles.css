@@ -7,19 +7,20 @@ body {
 nav {
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
-  width: 15rem;
-  z-index: 30;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+
 }
 
 .background {
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
-  width: 15rem;
+  width: 100%;
+  height: 80px;
   background: aliceblue;
+
+
 }
 
 .button-style {
@@ -43,17 +44,16 @@ ul,
 li {
   margin: 0;
   padding: 0;
+
 }
 
-ul {
-  padding: 25px;
+ul{
+  padding: 5px;
   position: absolute;
-  top: 100px;
 }
 
 li {
   list-style: none;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;

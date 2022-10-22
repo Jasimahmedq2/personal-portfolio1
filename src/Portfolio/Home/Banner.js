@@ -21,7 +21,7 @@ const Banner = () => {
   }
 
   return (
-    <div className="banner-container   px-12 sm:pt-20 p-20" id='home'>
+    <div className="banner-container   px-12 sm:pt-20 p-20" Id='home'>
 
 
       <div className=' sm:flex justify-center items-center'>

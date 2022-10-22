@@ -23,7 +23,7 @@ const Project = () => {
       .then(data => setProjects(data))
   }, [])
   return (
-    <div id='service'>
+    <div Id='service'>
       <div className='text-center text-xl font-bold text-primary about my-12'>
         <motion.h2
           whileHover={{ scale: 1.2 }}
@@ -73,8 +73,8 @@ const Project = () => {
                     </h2>
                     <p>{project?.description}</p>
                     <div className="card-actions justify-end">
-                      <button className="btn btn-outline btn-sm">Preview</button>
-                      <button className="btn btn-outline btn-sm">screenshot</button>
+                      <button className="btn btn-outline btn-sm" disabled={project.length === 0}>Preview</button>
+                      <button className="btn btn-outline btn-sm" disabled={project.length === 0}>screenshot</button>
                     </div>
                   </div>
                 </div>

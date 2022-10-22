@@ -32,8 +32,8 @@ const variants = {
   }
 };
 
-export const Navigation = ({ toggle }) => (
-  <motion.ul variants={variants}>
+export const Navigation = ({toggle}) => (
+  <motion.ul variants={variants} className="flex justify-around items-center sm:pl-16 pl-12 py-6">
     {
       links.map(link => <MenuItem
         toggle={toggle}

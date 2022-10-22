@@ -23,7 +23,7 @@ const variants = {
 
 
 export const MenuItem = ({ link, toggle }) => {
-  const style = { border: `2px solid ${[link]}` };
+
   return (
     <motion.li
       variants={variants}
@@ -31,14 +31,14 @@ export const MenuItem = ({ link, toggle }) => {
       whileTap={{ scale: 0.95 }}
     >
 
-      <div className="text-placeholder" style={style}>
-        <button className="btn-sm btn-outline px-8 w-50 mx-auto text-xl uppercase">
+      <div className="text-placeholder">
+        <button className="btn-sm btn-outline sm:px-8 sm:text-xl uppercase ">
           <Link
-            onClick={toggle}
+          onClick={toggle}
             to={link.to}
-            spy={true}
             smooth={true}
-            duration={500}
+            spy={true}
+            duration={1000}
           >{link.name}</Link>
         </button>
       </div>

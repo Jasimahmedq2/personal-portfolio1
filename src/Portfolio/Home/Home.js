@@ -12,7 +12,7 @@ import { motion } from 'framer-motion'
 const Home = () => {
 
   return (
-    <div>
+    <div className='bg-base-300 '>
       <motion.div
         whileHover={{ scale: 1.2 }}
         className='fixed bottom-5 right-10 z-40'>
