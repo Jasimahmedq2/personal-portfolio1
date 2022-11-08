@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { MdOutlineRateReview, MdReviews } from 'react-icons/md'
 import { AiFillQuestionCircle } from 'react-icons/ai'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {MdRateReview} from 'react-icons/md'
 
 import {
   useTransition,
@@ -27,39 +28,39 @@ const Testimonials = () => {
   return (
     <div className='py-8 px-12 main-container' Id='testimonials'>
 
-    <div className='text-center '>
-      <h2 className='text-natural font-bold text-xl mt-2'>
-        <MdOutlineRateReview className='text-8xl text-secondary w-50 mx-auto mb-5' />
-        <span className='shadow-xl rounded-lg about text-white'>testimonials</span> </h2>
-      <h2 className='text-2xl text-accent font-bold mt-10 flex items-center'>what say our client <AiFillQuestionCircle /></h2>
-    </div>
+      <div className='text-center '>
+        <h2 className='text-natural font-bold text-xl mt-2'>
+          <MdOutlineRateReview className='text-8xl text-secondary w-50 mx-auto mb-5' />
+          <span className='shadow-xl rounded-lg about text-white'>testimonials</span> </h2>
+        <h2 className='text-2xl text-accent font-bold mt-10 flex items-center'>what say our client <AiFillQuestionCircle /></h2>
+      </div>
 
-    <Swiper
-    
-     >
-      {
-        reviews.map((review, index) => (
-          <SwiperSlide className='text-center slidebar '>
+      <Swiper
 
-          <div className="" style={{
-            borderLeft: '5px solid #1C6EA4',
-            background: '#191d2b'
-          }}>
-            <div className="avatar">
-              <div className="w-16 rounded-full ring ring-primary ring-offset-base-300 ring-offset-2 relative z-40">
-                <img src="https://placeimg.com/192/192/people" />
+      >
+        {
+          reviews.map((review, index) => (
+            <SwiperSlide className='text-center slidebar ' key={index}>
+
+              <div className="bg-slate-500 w-1/2 mx-auto px-6 border-animation">
+                <h2><MdRateReview className='text-6xl w-50 mx-auto text-accent hover:text-black '/></h2>
+                <div className="pt-4">
+                  <i className='text-xl text-natural font-bold text-black'>{review.description}</i>
+                </div>
+                <div className='flex justify-center items-center space-x-4 p-6'>
+                  <div className="avatar">
+                    <div className="w-16 rounded-full ring ring-primary ring-offset-base-300 ring-offset-2 relative z-40">
+                      <img src="https://placeimg.com/192/192/people" />
+                    </div>
+                  </div>
+                  <h2 className="text-3xl text-natural font-bold text-accent">{review.title}</h2>
+                </div>
               </div>
-            </div>
-            <div className="">
-              <h2 className="text-3xl text-natural font-bold text-accent">{review.title}</h2>
-              <i className='text-xl text-natural font-bold text-black'>{review.description}</i>
-            </div>
-          </div>
-          </SwiperSlide>
-        ))
-      }
-    </Swiper>
-    </div> 
+            </SwiperSlide>
+          ))
+        }
+      </Swiper>
+    </div>
 
   );
 };

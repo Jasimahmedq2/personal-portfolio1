@@ -38,7 +38,7 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <div className='bg-black'>
       <Example />
       {
         showButton && (

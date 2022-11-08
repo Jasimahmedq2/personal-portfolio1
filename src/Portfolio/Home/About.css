@@ -3,18 +3,26 @@
   box-shadow: 5px 11px 28px 9px rgba(0, 0, 0, 0.64);
 }
 
-.effect-container{
+.effect-container {
   position: relative;
+  cursor: pointer;
 }
-.effect-container img{
-display: none;
-width: 90px;
-height: 90px;
-position: absolute;
-top: 50;
-border-radius: 50%;
+
+.effect-container img {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50;
+  border-radius: 50%;
 }
-.effect-container:hover img{
-display: block;
-z-index: 1;
+
+.effect-container:hover img {
+  display: block;
+  z-index: 1;
 }
+.text-animation{
+  transform: rotate(270deg);
+}
+
+

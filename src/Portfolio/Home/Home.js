@@ -1,5 +1,4 @@
 import React from 'react';
-import { Example } from '../axample/Example';
 import About from './About';
 import Banner from './Banner';
 import Contact from './Contact';
@@ -7,12 +6,13 @@ import Project from './Project';
 import Testimonials from './Testimonials';
 import { BsWhatsapp } from 'react-icons/bs'
 import { motion } from 'framer-motion'
+import './Home.css'
 
 
 const Home = () => {
 
   return (
-    <div className='bg-base-300 '>
+    <div  className='about-gradient'>
       <motion.div
         whileHover={{ scale: 1.2 }}
         className='fixed bottom-5 right-10 z-40'>

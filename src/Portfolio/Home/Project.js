@@ -36,7 +36,7 @@ const Project = () => {
       <div className='px-12 py-12 sm:grid-cols-1'>
         <Swiper
           breakpoints={{
-            376: {
+            300: {
               slidesPerView: 1,
             },
             576: {
@@ -63,18 +63,18 @@ const Project = () => {
             projects.map((project, index) => (
 
 
-              <SwiperSlide>
-                <div className="card lg:max-w-lg bg-base-200 hover:shadow-lg">
+              <SwiperSlide key={index}>
+                <div className="card lg:max-w-lg bg-slate-700 hover:shadow-lg border">
                   <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                   <div className="card-body">
-                    <h2 className="card-title">
+                    <h2 className="card-title text-accent text-xl font-bold">
                       {project.title}
                       <div className="badge badge-secondary">{index + 1}</div>
                     </h2>
-                    <p>{project?.description}</p>
+                    <p className='text-sm text-yellow-100 font-bold'>{project?.description}</p>
                     <div className="card-actions justify-end">
-                      <button className="btn btn-outline btn-sm" disabled={project.length === 0}>Preview</button>
-                      <button className="btn btn-outline btn-sm" disabled={project.length === 0}>screenshot</button>
+                      <button className="btn btn-outline btn-sm text-white" disabled={project.length === 0}>Preview</button>
+                      <button className="btn btn-outline btn-sm text-white" disabled={project.length === 0}>screenshot</button>
                     </div>
                   </div>
                 </div>
