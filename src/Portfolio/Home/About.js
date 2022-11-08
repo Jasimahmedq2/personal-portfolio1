@@ -16,10 +16,10 @@ import './About.css'
 
 const About = () => {
   return (
-    <div Id='about'>
+    <div Id='about' className='relative'>
 
-      <div className='px-12 py-16 relative'>
-        <h2 className='text-4xl text-white font-bold mb-3 text-animation text-primary absolute top-1/2 left-0'>About</h2>
+      <div className='px-12 py-16 '>
+        <h2 className='text-4xl  font-bold mb-3 rotate  absolute bottom-20 left-0'>About</h2>
         <h3 className='text-2xl font-bold text-secondary'>I'm Jasim Web developer</h3>
         <h3 className='text-xl mt-8 text-base-100 font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur, iusto rerum, pariatur deleniti nostrum error nam in animi ipsa cupiditate numquam eligendi, expedita quo aliquid earum placeat similique laudantium!</h3>
       </div>

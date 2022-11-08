@@ -42,20 +42,20 @@ const Contact = () => {
             <div>
               <input type="text"
                 name='user_name'
-                class="w-full p-2 text-sm border-b-2 border-gray-400  focus:border-blue-400 outline-none opacity-50"
+                class="w-full p-2 text-sm border-b-4   focus:border-black outline-none border-purple-500 "
                 placeholder="Full Name" />
             </div>
             <div>
               <input type="email"
                 name='user_email'
-                class="w-full p-2 text-sm border-b-2 border-gray-400 outline-none opacity-50 focus:border-blue-400"
+                class="w-full p-2 text-sm border-b-4   focus:border-black outline-none border-purple-500 "
                 placeholder="Your Email" required/>
             </div>
       
 
               <div>
                 <textarea name="message"
-                  class="w-full p-6 text-sm border-b-2 border-gray-400 rounded-lg outline-none opacity-50 focus:border-blue-400 resize-none"
+                  class="w-full p-2 text-sm border-b-4   focus:border-black outline-none border-purple-500 resize-none"
                   placeholder="Enter your message"></textarea>
               </div>
 
