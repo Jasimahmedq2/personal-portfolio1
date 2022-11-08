@@ -35,7 +35,7 @@ const Contact = () => {
       </div>
 
 
-      <div class="flex items-center justify-center w-1/2 px-4">
+      <div class="flex items-center justify-center w-full mt-6 sm:w-1/2 px-4">
         <div class="w-full px-6 py-16 bg-base-100 rounded-lg shadow-2xl">
           <form class="mx-8 space-y-8"
             ref={form} onSubmit={sendEmail}>

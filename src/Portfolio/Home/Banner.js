@@ -33,7 +33,7 @@ const Banner = () => {
               data-aos="fade-right"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="text-2xl font-bold text-red-400"><span className='after-effect bg-text'>I'M Jasim</span>
+              className="text-2xl font-bold text-red-400"><span className='after-effect '>I'M Jasim</span>
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter.typeString('Web Developer').pauseFor(2000).deleteAll().typeString('React Developer').pauseFor(2000).deleteAll().typeString('Coding Lover').pauseFor(2000).deleteAll().typeString('Mern Stack developer')

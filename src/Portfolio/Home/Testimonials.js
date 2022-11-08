@@ -42,7 +42,7 @@ const Testimonials = () => {
           reviews.map((review, index) => (
             <SwiperSlide className='text-center slidebar ' key={index}>
 
-              <div className="bg-slate-500 w-1/2 mx-auto px-6 border-animation">
+              <div className="bg-slate-500 w-11/12 sm:w-1/2 mx-auto px-6 border-animation">
                 <h2><MdRateReview className='text-6xl w-50 mx-auto text-accent hover:text-black '/></h2>
                 <div className="pt-4">
                   <i className='text-xl text-natural font-bold text-black'>{review.description}</i>

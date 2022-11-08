@@ -16,11 +16,11 @@ import './About.css'
 
 const About = () => {
   return (
-    <div Id='about' className='relative'>
+    <div Id='about'>
 
-      <div className='px-12 py-16 '>
-        <h2 className='text-4xl  font-bold mb-3 rotate  absolute bottom-20 left-0'>About</h2>
-        <h3 className='text-2xl font-bold text-secondary'>I'm Jasim Web developer</h3>
+      <div className='px-12 py-16 relative'>
+        <h2 className='text-4xl  font-bold mb-3 rotate absolute top-0 left-0 mt-6'>About</h2>
+        <h3 className='text-2xl font-bold text-secondary py-6 mt-4'>I'm Jasim Web developer</h3>
         <h3 className='text-xl mt-8 text-base-100 font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur, iusto rerum, pariatur deleniti nostrum error nam in animi ipsa cupiditate numquam eligendi, expedita quo aliquid earum placeat similique laudantium!</h3>
       </div>
 
@@ -37,7 +37,7 @@ const About = () => {
         <div className='relative'>
 
           <Tabs>
-            <TabList className='tabs -top-20 left-6 z-10'>
+            <TabList className='tabs -top-20 mt-2 left-6 z-10'>
               <Tab className="tab tab-bordered text-white">Skills</Tab>
               <Tab className="tab tab-bordered text-white">service</Tab>
             </TabList>
