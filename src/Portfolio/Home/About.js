@@ -11,6 +11,7 @@ import node from '../../image/node.png'
 import express from '../../image/express.png'
 import mongodb from '../../image/mongodb.png'
 import htmlCss from '../../image/html-css.jfif'
+import resume from '../../image/Jasim_Ahmed_Resume_24-11-2022-15-36-02.pdf'
 import './About.css'
 
 
@@ -18,15 +19,20 @@ const About = () => {
   return (
     <div Id='about'>
 
-      <div className='px-12 py-16 relative'>
-        <h2 className='text-4xl  font-bold mb-3 rotate absolute top-0 left-0 mt-6'>About</h2>
-        <h3 className='text-2xl font-bold text-secondary py-6 mt-4'>I'm Jasim Web developer</h3>
-        <h3 className='text-xl mt-8 text-base-100 font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur, iusto rerum, pariatur deleniti nostrum error nam in animi ipsa cupiditate numquam eligendi, expedita quo aliquid earum placeat similique laudantium!</h3>
+      <div className='px-12 py-24 relative'>
+        <h2 className='text-4xl  font-bold mb-3 rotate absolute top-2 underline decoration-secondary decoration-wavy		 left-0 mt-6'>About</h2>
+        <h3 className='text-2xl font-bold text-accent py-6 mt-4'>I'm Jasim Web developer</h3>
+        <h3 className='text-xl mt-8 text-base-100 font-mono'>
+        I am a creative designer and developer, who aims to work with small businesses and marginalized communities to bring their passions to life. I offer both design and development services of web applications or websites!
+        </h3>
       </div>
 
 
 
-      <div className='w-5/6 mx-auto  z-10 rounded-md about-me shadow-xl rounded border-t' style={{
+      <div className='w-5/6 mx-auto sm:skew-x-6	
+
+
+z-10 rounded-md about-me shadow-xl rounded border-t ' style={{
         marginTop: '-2rem',
         background: '#2e2e35'
       }}>
@@ -250,7 +256,7 @@ const About = () => {
             </TabPanel>
           </Tabs>
 
-          <button className='flex justify-between items-center btn btn-primary text-xl font-bold absolute right-0 '><FiDownloadCloud className='mr-2 text-2xl' /> download CV</button>
+          <a href={resume} className='flex justify-between items-center btn btn-primary text-xl font-bold absolute right-0 ' download><FiDownloadCloud className='mr-2 text-2xl' /> download CV</a>
         </div>
       </div >
 

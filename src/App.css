@@ -1,11 +1,45 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
+
 .contact-background {
-  background-color:#191d2b;
+  background-color: #191d2b;
   opacity: 0.8;
   background-size: 200px 200px;
   background-image: repeating-linear-gradient(to right, #8a8c9d, #e0e1f3 1px, #01010a 1px, #01010a);
 }
 
+
+.project-container:hover img {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

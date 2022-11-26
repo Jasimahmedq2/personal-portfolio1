@@ -9,6 +9,7 @@ import 'swiper/css/scrollbar'
 
 
 import 'swiper/css';
+import ScreenShot from './Modal/ScreenShot';
 
 
 const Project = () => {
@@ -16,6 +17,7 @@ const Project = () => {
 
 
   const [projects, setProjects] = useState([])
+  const [openModal, setOpenModal] = useState(null)
 
   useEffect(() => {
     fetch('data.json')
@@ -27,7 +29,7 @@ const Project = () => {
       <div className='text-center text-xl font-bold text-primary about my-12'>
         <motion.h2
           whileHover={{ scale: 1.2 }}
-         
+
 
         ><AiOutlineFundProjectionScreen className='text-8xl w-50 mx-auto mb-5' /></motion.h2>
         Recent I've build {projects.length}  projects</div>
@@ -49,7 +51,7 @@ const Project = () => {
 
           slidesPerView={2}
           spaceBetween={30}
-        
+
           pagination={{
             clickable: true,
           }}
@@ -64,17 +66,23 @@ const Project = () => {
 
 
               <SwiperSlide key={index}>
-                <div className="card lg:max-w-lg bg-slate-700 hover:shadow-lg border">
-                  <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                <div className="card lg:max-w-lg bg-slate-700 hover:shadow-lg border project-container">
+                  <figure><img src={project.picture} alt="Shoes" /></figure>
                   <div className="card-body">
                     <h2 className="card-title text-accent text-xl font-bold">
                       {project.title}
                       <div className="badge badge-secondary">{index + 1}</div>
                     </h2>
-                    <p className='text-sm text-yellow-100 font-bold'>{project?.description}</p>
+
+                    <div className="tooltip" data-tip={project.description}>
+                      <p className='text-sm text-yellow-100 font-bold'>{project?.description.substring(0, 100)}...</p>
+                    </div>
+
+
                     <div className="card-actions justify-end">
-                      <button className="btn btn-outline btn-sm text-white" disabled={project.length === 0}>Preview</button>
-                      <button className="btn btn-outline btn-sm text-white" disabled={project.length === 0}>screenshot</button>
+                      <button className="btn btn-outline btn-sm text-white"><a href={project.link} target="_blank">Preview</a></button>
+                      <label onClick={() => setOpenModal(project)} htmlFor="screen-shot-modal" className="btn btn-outline btn-sm text-white">screenShot</label>
+
                     </div>
                   </div>
                 </div>
@@ -86,6 +94,13 @@ const Project = () => {
           }
         </Swiper>
       </div>
+
+      {
+        openModal && <ScreenShot
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+        ></ScreenShot>
+      }
 
     </div>
   );

@@ -7,6 +7,7 @@ import Testimonials from './Testimonials';
 import { BsWhatsapp } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import './Home.css'
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -26,8 +27,8 @@ const Home = () => {
       <About />
       <Project />
       <Testimonials />
-
       <Contact />
+      <Footer />
 
     </div>
 

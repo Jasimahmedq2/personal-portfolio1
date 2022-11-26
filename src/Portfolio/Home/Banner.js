@@ -25,7 +25,7 @@ const Banner = () => {
   return (
     <div className='banner-container'>
 
-      <div className="px-12 sm:pt-20 p-20" Id='home'>
+      <div className="px-12 pt-20 p-20" Id='home'>
         <div className=' sm:flex justify-center items-center'>
 
           <div className='sm:w-1/2'>
@@ -33,7 +33,7 @@ const Banner = () => {
               data-aos="fade-right"
               data-aos-delay="300"
               data-aos-duration="1000"
-              className="text-2xl font-bold text-red-400"><span className='after-effect '>I'M Jasim</span>
+              className="text-2xl font-bold text-amber-100"><span className='after-effect '>I'M Jasim</span>
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter.typeString('Web Developer').pauseFor(2000).deleteAll().typeString('React Developer').pauseFor(2000).deleteAll().typeString('Coding Lover').pauseFor(2000).deleteAll().typeString('Mern Stack developer')
@@ -42,8 +42,8 @@ const Banner = () => {
               />
 
             </h2>
-            <p className='mt-5 text-xl text-white bg-text'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, ullam. Consectetur adipisci facere consequatur iste nostrum maxime quisquam fugit libero!
+            <p className='mt-5 text-xl text- bg-text text-teal-200	 font-bold tracking-wide'>
+            I'm a web developer with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add to your team, I'd love to hear from you!
             </p>
          
             <Link 
@@ -84,13 +84,13 @@ const Banner = () => {
               data-aos="fade-down"
               data-aos-delay="500"
               data-aos-duration="3000"
-              className='mt-4 ancor-tag grid sm:grid-cols-1 grid-cols-3'>
+              className='mt-4 ancor-tag grid sm:grid-cols-1 grid-cols-3 bg-white shadow-lg rounded px-2 py-2'>
 
-              <h2 className='w-50 mx-auto'><a href="https://www.facebook.com/" target="_blank"><BsFacebook className='text-5xl ' /></a></h2>
+              <h2 className='w-50 mx-auto'><a href="https://www.facebook.com/jasim4148/" target="_blank"><BsFacebook className='text-5xl ' /></a></h2>
 
-              <h2 className='w-50 mx-auto'><a href="https://bd.linkedin.com/" target="_blank"><AiFillLinkedin className='text-5xl ' /></a></h2>
+              <h2 className='w-50 mx-auto'><a href="https://www.linkedin.com/in/jasim-ahmed-838a24242/" target="_blank"><AiFillLinkedin className='text-5xl ' /></a></h2>
 
-              <h2 className='w-50 mx-auto'><a href="https://github.com/" target="_blank"><AiFillGithub className='text-5xl ' /></a></h2>
+              <h2 className='w-50 mx-auto'><a href="https://github.com/Jasimahmedq2" target="_blank"><AiFillGithub className='text-5xl ' /></a></h2>
             </div>
           </div>
         </div>
