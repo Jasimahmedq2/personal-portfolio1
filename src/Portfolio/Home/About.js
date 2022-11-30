@@ -11,7 +11,7 @@ import node from '../../image/node.png'
 import express from '../../image/express.png'
 import mongodb from '../../image/mongodb.png'
 import htmlCss from '../../image/html-css.jfif'
-import resume from '../../image/Jasim_Ahmed_Resume_30-11-2022-10-53-57.pdf'
+import resume from '../../image/jasim-resume.pdf'
 import './About.css'
 
 
