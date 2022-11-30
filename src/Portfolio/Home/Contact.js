@@ -38,8 +38,10 @@ const Contact = () => {
 
 
         <div class="flex items-center justify-center w-full mt-6 sm:w-1/2 px-4">
-          <div class="w-full px-6 py-16 bg-base-100 rounded-lg shadow-2xl">
-            <form class="mx-8 space-y-8"
+          <div class="w-full px-6  bg-base-100 rounded-lg shadow-2xl">
+          <h2 className='text-xl font-bold text-center'>Contact Me</h2>
+
+            <form class="mx-8 space-y-8 py-6"
               ref={form} onSubmit={sendEmail}>
               <div>
                 <input type="text"

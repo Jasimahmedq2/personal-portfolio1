@@ -36,13 +36,12 @@
   clip-path: polygon(0 100%, 35% 89%, 74% 100%, 100% 85%, 100% 0%, 0 0);
 }
 
-.ancor-tag h2 {
+.ancor-tag .social-icon {
   cursor: pointer;
 color: black;
-  position: relative;
 }
 
-.ancor-tag h2:hover {
+.ancor-tag .social-icon:hover {
 
 opacity: 0.5;
 

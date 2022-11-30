@@ -43,17 +43,17 @@ const Banner = () => {
 
             </h2>
             <p className='mt-5 text-xl text- bg-text text-teal-200	 font-bold tracking-wide'>
-            I'm a web developer with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add to your team, I'd love to hear from you!
+              I'm a web developer with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add to your team, I'd love to hear from you!
             </p>
-         
-            <Link 
-            className="btn btn-accent"
-            to='contact'
-            smooth={true}
-            spy={true}
-            duration={1000}
+
+            <Link
+              className="btn btn-accent"
+              to='contact'
+              smooth={true}
+              spy={true}
+              duration={1000}
             >contact me</Link>
-         
+
           </div>
           <div className='sm:w-1/2 sm:flex'>
 
@@ -84,13 +84,13 @@ const Banner = () => {
               data-aos="fade-down"
               data-aos-delay="500"
               data-aos-duration="3000"
-              className='mt-4 ancor-tag grid sm:grid-cols-1 grid-cols-3 bg-white shadow-lg rounded px-2 py-2'>
+              className='mt-4 ancor-tag grid sm:grid-cols-1 grid-cols-3  bg-white shadow-lg rounded px-2 py-2 text-center'>
 
-              <h2 className='w-50 mx-auto'><a href="https://www.facebook.com/jasim4148/" target="_blank"><BsFacebook className='text-5xl ' /></a></h2>
+              <div className='w-50 mx-auto  social-icon'><a href="https://www.facebook.com/jasim4148/" target="_blank"><BsFacebook className='lg:text-5xl text-2xl' /></a></div>
 
-              <h2 className='w-50 mx-auto'><a href="https://www.linkedin.com/in/jasim-ahmed-838a24242/" target="_blank"><AiFillLinkedin className='text-5xl ' /></a></h2>
+              <div className='w-50 mx-auto  social-icon'><a href="https://www.linkedin.com/in/jasim-ahmed-838a24242/" target="_blank"><AiFillLinkedin className='lg:text-5xl text-2xl' /></a></div>
 
-              <h2 className='w-50 mx-auto'><a href="https://github.com/Jasimahmedq2" target="_blank"><AiFillGithub className='text-5xl ' /></a></h2>
+              <div className='w-50 mx-auto  social-icon'><a href="https://github.com/Jasimahmedq2" target="_blank"><AiFillGithub className='lg:text-5xl text-2xl' /></a></div>
             </div>
           </div>
         </div>
