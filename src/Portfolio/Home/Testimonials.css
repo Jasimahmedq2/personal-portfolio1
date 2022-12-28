@@ -8,14 +8,14 @@
 }
 
 .main-container {
-  background: #10121b;
+  background: #21201F;
   opacity: 0.8;
   background-size: 200px 200px;
-  background-image: repeating-linear-gradient(to right, #ebecf7, #e0e1f3 1px, #01010a 1px, #01010a);
+  background-image: repeating-linear-gradient(to right, #ebecf7, #e0e1f3 3px, #21201F 3px, #21201F);
 }
 
 .border-animation {
-  --borderWidth: 3px;
+  --borderWidth: 20px;
   position: relative;
   border-radius: var(--borderWidth);
 }

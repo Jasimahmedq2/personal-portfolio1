@@ -66,7 +66,7 @@ const Project = () => {
 
 
               <SwiperSlide key={index}>
-                <div className="card lg:max-w-lg bg-slate-700 hover:shadow-lg border project-container">
+                <div style={{background: '#474646'}} className="card lg:max-w-lg hover:shadow-lg border project-container">
                   <figure><img src={project.picture} alt="Shoes" /></figure>
                   <div className="card-body">
                     <h2 className="card-title text-accent text-xl font-bold">

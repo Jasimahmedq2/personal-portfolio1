@@ -34,7 +34,7 @@ const About = () => {
 
 z-10 rounded-md about-me shadow-xl rounded border-t ' style={{
         marginTop: '-2rem',
-        background: '#2e2e35'
+        background: '#353433'
       }}>
         <h2 className='text-2xl text-primary font-bold text-center pb-16'>
           <BsCodeSlash className='w-50 mx-auto text-5xl text-secondary' />

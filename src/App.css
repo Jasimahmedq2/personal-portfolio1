@@ -4,10 +4,10 @@
 }
 
 .contact-background {
-  background-color: #191d2b;
+  background-color: #353433;
   opacity: 0.8;
   background-size: 200px 200px;
-  background-image: repeating-linear-gradient(to right, #8a8c9d, #e0e1f3 1px, #01010a 1px, #01010a);
+  background-image: repeating-linear-gradient(to right, #8a8c9d, #e0e1f3 1px, #21201F 1px, #474646);
 }
 
 
