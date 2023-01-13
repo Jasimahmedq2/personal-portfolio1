@@ -12,7 +12,7 @@ const Contact = () => {
       .then((result) => {
         console.log(result.text);
       }, (error) => {
-        console.log(error.text);
+        console.log('email js',error.text);
       });
     toast.success('Send successful', {
       position: "bottom-center",
