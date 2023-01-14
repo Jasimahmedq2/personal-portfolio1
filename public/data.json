@@ -19,5 +19,12 @@
     "link": "https://crypto-currency-jasim.netlify.app",
     "title": "Crypto-currency",
     "description": "simple cryptocurrency app using Api. where displayed crypto currency's recent price and market value. and implement search functionality."
+  },
+  {
+    "picture": "https://i.ibb.co/FxhNKxJ/assortment-cinema-elements-red-b.jpg",
+    "screenshot":"https://i.ibb.co/XJKqDHP/React-App-5.png",
+    "link": "https://movie-jasim.netlify.app/",
+    "title": "Movie-Info",
+    "description": "its movie information website. here you can see all movie information rating, actors-name, director name and other necessary information"
   }
 ]

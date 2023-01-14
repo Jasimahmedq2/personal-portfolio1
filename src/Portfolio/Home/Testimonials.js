@@ -65,7 +65,7 @@ const Testimonials = () => {
                 <div className='flex justify-center items-center space-x-4 p-6'>
                   <div className="avatar">
                     <div className="w-16 rounded-full ring ring-primary ring-offset-base-300 ring-offset-2 relative z-40">
-                      <img src="https://placeimg.com/192/192/people" />
+                      <img src={review.picture} alt="picture" />
                     </div>
                   </div>
                   <h2 className="text-3xl text-natural font-bold text-accent">{review.title}</h2>

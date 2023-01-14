@@ -1,22 +1,33 @@
 [
   {
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://i.ibb.co/1JCZccC/customer-2.png",
     "title": "john",
-    "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quam!"
+    "description": " I was extremely impressed by the web developer's attention to detail and ability to bring my vision to life. The final product exceeded my expectations.!"
   },
   {
-    "picture": "http://placehold.it/32x32",
-    "title": "jasim",
-    "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quam!"
+    "picture": "https://i.ibb.co/ChNQkr7/customer-3.png",
+    "title": "patwary khan",
+    "description": "The web developer was a pleasure to work with. They were highly skilled, efficient and always willing to go the extra mile to ensure my satisfaction."
   },
   {
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://i.ibb.co/Xk4vjW8/customer-1.png",
     "title": "smith",
-    "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quam!"
+    "description":"The web developer's technical expertise and ability to understand my business needs made the development process seamless and stress-free."
+
   },
   {
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://i.ibb.co/q9WBp1F/delivery-concept-handsome-africa.jpg",
     "title": "jonson",
-    "description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quam!"
+    "description": "I was impressed by the web developer's ability to deliver a high-quality website on time and within budget. I would highly recommend them."
+  },
+  {
+    "picture": "https://i.ibb.co/WkGQ1Zg/241202483-383469760130844-229624320087875528-n.jpg",
+    "title": "Jasim Ahmed",
+    "description": "The web developer's communication skills were top-notch, making it easy to collaborate and stay on the same page throughout the project. The end result was a stunning website that exceeded my expectations."
   }
 ]
+
+
+
+
+
