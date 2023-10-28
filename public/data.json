@@ -1,30 +1,23 @@
 [
   {
     "picture": "https://i.ibb.co/N7hNPNK/manufacturer.jpg",
-    "screenshot":"https://i.ibb.co/DYBVJ7V/React-App-2.png",
+    "screenshot": "https://i.ibb.co/DYBVJ7V/React-App-2.png",
     "link": "https://tools-manufacturer-jasim.netlify.app/",
     "title": "Tools manufacturer",
     "description": "its pc tools manufacturer website where users can buy PC parts. this project is full stack following Mern stack technology."
   },
   {
     "picture": "https://i.ibb.co/2vfnFZK/creative.jpg",
-    "screenshot":"https://i.ibb.co/yFKfgY4/Creative-Agency-2.png",
-    "link": "https://creative-agency-eaa8b.web.app/",
-    "title": "creative agency",
-    "description": "this website is for digital skill development services. where users can purchase their favorite courses. its full-stack project using nodeJs, Mongodb, ReactJs, and express"
+    "screenshot": "https://i.ibb.co/yFKfgY4/Creative-Agency-2.png",
+    "link": "https://painthut.vercel.app/home",
+    "title": "PaintingHut",
+    "description": "Full-stack web application for booking painting services and ordering, with role-based authentication."
   },
   {
     "picture": "https://i.ibb.co/M75k3Ps/crypto.jpg",
-    "screenshot":"https://i.ibb.co/3fNfF0d/React-App-3.png",
-    "link": "https://crypto-currency-jasim.netlify.app",
-    "title": "Crypto-currency",
-    "description": "simple cryptocurrency app using Api. where displayed crypto currency's recent price and market value. and implement search functionality."
-  },
-  {
-    "picture": "https://i.ibb.co/FxhNKxJ/assortment-cinema-elements-red-b.jpg",
-    "screenshot":"https://i.ibb.co/XJKqDHP/React-App-5.png",
-    "link": "https://movie-jasim.netlify.app/",
-    "title": "Movie-Info",
-    "description": "its movie information website. here you can see all movie information rating, actors-name, director name and other necessary information"
+    "screenshot": "https://i.ibb.co/3fNfF0d/React-App-3.png",
+    "link": "https://nextgen-social-media.netlify.app/",
+    "title": "NextGen",
+    "description": "NextGen - A social media platform with user-friendly features,including follow, unfollow, like, comment, and post functionalities,along with robust authentication and authorization mechanisms."
   }
 ]

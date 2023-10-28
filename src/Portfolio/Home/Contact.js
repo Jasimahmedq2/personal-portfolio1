@@ -8,7 +8,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_k5e5rpo', 'template_fnpki6m', form.current, 'YgRulTmORe8ZYcETe')
+    emailjs.sendForm('service_k0ndvhj', 'template_ydc029l', form.current, 'YgRulTmORe8ZYcETe')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
